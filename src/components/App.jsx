@@ -4,13 +4,26 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+
+        backgroundColor: "#d0fafd"
       }}
     >
-      React homework template
+      <h1 style={{
+        fontSize: 40,
+        color: '#010101',
+      }}>Your Todo List</h1>
+      <button
+            style={{
+              fontSize: 30,
+              color: '#d0fafd',
+              backgroundColor: "#0abad0",
+              border: 'none',
+              borderRadius: '8px',
+              cursor: 'pointer'
+            }}>Create</button>
     </div>
   );
 };
