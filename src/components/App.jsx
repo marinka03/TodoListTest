@@ -27,7 +27,7 @@ const App = () => {
     // console.log({type:'AllTasks' ,payload: items})
     // dispatch({ type: 'tasks', payload: {items}});
     dispatch(AllTasks(items));
-  }, []);
+  }, [dispatch, allTasks]);
   return (
     <>
       {isLoading && !error && <b>Request in progress...</b>}
