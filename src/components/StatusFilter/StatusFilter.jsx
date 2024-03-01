@@ -31,18 +31,6 @@ const StatusFilter = () => {
       >
         Completed
       </Button>
-
-      {/* <ul>
-        <li>
-          <Link to="mission">Create</Link>
-        </li>
-        <li>
-          <Link to="team">Active</Link>
-        </li>
-        <li>
-          <Link to="reviews">Completed</Link>
-        </li>
-      </ul> */}
     </div>
   );
 };

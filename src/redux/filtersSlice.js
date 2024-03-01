@@ -13,7 +13,7 @@ const filtersSlice = createSlice({
       state.status = action.payload;
     },
     toggleCompleted(state, action) {
-      for (const task of state.items) {
+      for (const task of state) {
         if (task.id === action.payload) {
           task.completed = !task.completed;
           break;

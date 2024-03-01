@@ -22,3 +22,6 @@
   cursor: pointer;
   flex: 1 0 5rem;
 }
+.btn:focus{
+  background-color: #6aebf6;
+}

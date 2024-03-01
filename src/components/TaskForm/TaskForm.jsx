@@ -13,6 +13,8 @@ const TaskForm = () => {
       name: form.elements.name.value,
       description: form.elements.description.value,
     };
+    const prevValueStorage = JSON.parse(localStorage.getItem('todos'));
+    localStorage.setItem('todos', JSON.stringify([...prevValueStorage, task]));
     dispatch(AddTask(task));
     form.reset();
   };

@@ -11,13 +11,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter basename="TodoListTest">
     <React.StrictMode>
       <Provider store={store}>
-        <App />
+        {/* <PersistGate loading={null} persistor={persistor}> */}
+          <App />
+        {/* </PersistGate> */}
       </Provider>
     </React.StrictMode>
   </BrowserRouter>
 );
-
-// import { persistor, store } from './redux/store';
-// {/* <PersistGate loading={null} persistor={persistor}>
-// <App />
-// </PersistGate> */}

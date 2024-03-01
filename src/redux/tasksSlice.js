@@ -9,6 +9,7 @@ const tasksSlice = createSlice({
   },
   reducers: {
     AllTasks(state, action) {
+      console.log(action)
       state.items = action.payload;
     },
     AddTask(state, action) {

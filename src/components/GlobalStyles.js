@@ -4,7 +4,7 @@ import 'modern-normalize';
 const GlobalStyles = createGlobalStyle`
 body {
     margin: 0;
-    background-color: #a7f5fa;
+    background-color: #ecffff;
     font-family: cursive;;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

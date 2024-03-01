@@ -1,7 +1,7 @@
 .btn {
   display: inline-flex;
   padding: 8px 12px;
-  border-radius: 4px;
+  border-radius: 4px 4px 0 0;
   border: none;
   font: inherit;
   font-weight: 600;
@@ -11,7 +11,7 @@
 }
 
 .btn.isSelected {
-  background-color: #6aebf6;
+  background-color: #0abad0;
   color: #ecffff;
 }
 
