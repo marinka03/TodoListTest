@@ -1,10 +1,7 @@
-import { useDispatch } from 'react-redux';
 import Button from '../Button';
 import style from './TaskForm.module.css';
-import { AddTask } from '../../redux/tasksSlice';
 
 const TaskForm = () => {
-  const dispatch = useDispatch();
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -15,7 +12,6 @@ const TaskForm = () => {
     };
     const prevValueStorage = JSON.parse(localStorage.getItem('todos'));
     localStorage.setItem('todos', JSON.stringify([...prevValueStorage, task]));
-    dispatch(AddTask(task));
     form.reset();
   };
 

@@ -7,7 +7,7 @@ function WelcomePage() {
       <h1 className={style.title}>
         Your Todo List
       </h1>
-      <Link className={style.link} to={'HomePage'}>
+      <Link className={style.link} to={'/HomePage/create'}>
         Create
       </Link>
     </main>

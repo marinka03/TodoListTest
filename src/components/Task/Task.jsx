@@ -1,13 +1,13 @@
 import { IoIosClose } from 'react-icons/io';
 import style from './Task.module.css';
-import { useDispatch } from 'react-redux';
-// import { deleteTask } from '../../redux/tasksSlice';
-import { toggleCompleted } from '../../redux/filtersSlice';
+// import { useDispatch } from 'react-redux';
+
+// import { toggleCompleted } from '../../redux/filtersSlice';
 
 const Task = ({ task, id }) => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
-  const handleToggle = () => dispatch(toggleCompleted(task));
+  // const handleToggle = () => dispatch(toggleCompleted(task));
   const description =
     task.description.length > 30
       ? `${task.description.split('').splice(0, 30).join('')}...`
@@ -32,7 +32,7 @@ const Task = ({ task, id }) => {
           type="checkbox"
           className={style.checkbox}
           checked={task.completed}
-          onChange={handleToggle}
+          // onChange={handleToggle}
         />
         <label htmlFor="ch" className={style.text}>
           {task.name} <span className={style.description}>{description}</span>
