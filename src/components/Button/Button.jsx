@@ -7,7 +7,6 @@ const Button = ({
   children,
   ...otherProps
 }) => {
-  console.dir(selected === true)
   return (
     <button
       className={clsx(style.btn, {
